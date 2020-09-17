@@ -1,0 +1,150 @@
+﻿.settings {
+    position: fixed !important;
+    right: -242px;
+    top: 110px;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -moz-transition: right .2s ease 0s;
+    -o-transition: right .2s ease 0s;
+    -webkit-transition: right .2s ease;
+    -webkit-transition-delay: 0s;
+    transition: right .2s ease 0s;
+    border-left: 1px solid #c8c7cc !important;
+    border-bottom: 1px solid #c8c7cc !important;
+    border-top: 1px solid #c8c7cc !important;
+    width: 240px;
+    z-index: 1050;
+}
+.settings.card {
+    border-radius: 0 !important;
+    border-top: none;
+    border-right: none;
+    background: #fff;
+    border-color: #c8c7cc !important;
+}
+    .settings .card-header {
+        border-bottom: 0px;
+    }
+    .settings .card-body{
+        padding-top:0rem!important;
+    }
+    .settings > .btn {
+        background: #fff !important;
+        border-color: #c8c7cc !important;
+        border-right-width: 0;
+        left: -47px;
+        padding: 10px 15px;
+        position: absolute;
+        top: 10px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .settings > .btn:focus {
+        box-shadow:unset!important;
+    }
+    .settings.active {
+        right: 0;
+    }
+
+
+ul#themecolors {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+    ul#themecolors li {
+        display: inline-block;
+    }
+        ul#themecolors li a {
+            width: 87px;
+            height: 40px;
+            display: inline-block;
+            margin: 5px;
+            color: transparent;
+            position: relative;
+        }
+            ul#themecolors li a.active:before {
+                content: "\f00c";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 40px;
+                width: 87px;
+                height: 40px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: #ffffff;
+                text-align: center;
+            }
+
+.theme-one-icon {
+    background: #346cb0;
+}
+.theme-two-icon {
+    background: #6e7c84;
+}
+.theme-three-icon {
+    background: #1fbba6;
+}
+.theme-four-icon {
+    background: #d1351f;
+}
+.theme-five-icon {
+    background: #6d5fc7;
+}
+.theme-six-icon {
+    background: #017b6f;
+}
+.theme-seven-icon {
+    background: #a7629e;
+}
+.theme-eight-icon {
+    background: #FF8C00;
+}
+
+    /*RTL classes*/
+.go-rtl .settings {
+    position: fixed !important;
+    right: unset !important;
+    left: -240px;
+    top: 120px;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -moz-transition: left .2s ease 0s;
+    -o-transition: left .2s ease 0s;
+    -webkit-transition: left .2s ease;
+    -webkit-transition-delay: 0s;
+    transition: left .2s ease 0s;
+    border-left: 0px;
+    border-right: 1px solid #c8c7cc !important;
+    border-bottom: 1px solid #c8c7cc !important;
+    width: 240px;
+    z-index: 1050;
+}
+
+    .go-rtl .settings.card {
+        border-top: none;
+        border-right: none;
+        background: #fff;
+        border-color: #c8c7cc !important;
+    }
+
+    .go-rtl .settings > .btn {
+        background: #fff !important;
+        border-color: #c8c7cc !important;
+        border-left-width: 0;
+        border-right-width: 1px;
+        left: unset !important;
+        right: -47px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+    }
+
+    .go-rtl .settings.active {
+        right: unset!important;
+        left: 0;
+    }
